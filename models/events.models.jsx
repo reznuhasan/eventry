@@ -26,4 +26,4 @@ const eventSchema=new Schema({
     },
 })
 
-export const events=mongoose.model.events ?? mongoose.model("events",eventSchema)
+export const events=  mongoose.models.Events || mongoose.model("Events", eventSchema);
