@@ -1,3 +1,4 @@
+import GoingButton from "@/components/GoingButton"
 import Image from "next/image"
 
 const HeroSection = () => {
@@ -19,7 +20,7 @@ const HeroSection = () => {
 
                 <div className="w-full flex gap-4 mt-4 flex-1 ">
                     <button className="w-full">Interested</button>
-                    <button className="w-full">Going</button>
+                    <GoingButton/>
                 </div>
             </div>
         </div>

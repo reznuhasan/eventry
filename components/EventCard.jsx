@@ -1,8 +1,10 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import GoingButton from './GoingButton'
 
 const EventCard = () => {
+    
     return (
         <div className="overflow-hidden rounded-md bg-[#242526]">
             <Image src="/google-io-2023-1.png" alt="Event 1" width="200" height="200" className="w-full" />
@@ -18,8 +20,7 @@ const EventCard = () => {
 
                 <div className="w-full flex gap-4 mt-4">
                     <button className="w-full bg-indigo-600 hover:bg-indigo-800">Interested</button>
-
-                    <button className="w-full">Going</button>
+                    <GoingButton/>
                 </div>
             </div>
         </div>
