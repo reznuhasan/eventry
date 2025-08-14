@@ -116,11 +116,24 @@
   * {
     @apply border-border outline-ring/50;
   }
-   body {
+
+  body {
     @apply bg-[#18191A] text-white;
   }
 
   button {
     @apply bg-[#464849] py-2 px-2 rounded-md border border-[#5F5F5F]/50 shadow-sm cursor-pointer hover:bg-[#3C3D3D] transition-colors active:translate-y-1;
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:hover {
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+    /* Keeps background transparent */
+    -webkit-text-fill-color: black !important;
+    background-color:transparent;
+    /* Keeps text color same */
+    transition: background-color 9999s ease-in-out 0s;
+    /* Prevents flicker */
   }
 }
