@@ -1,28 +1,29 @@
+import { registerUser } from '@/action'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import React from 'react'
 
 const RegisterForm = () => {
     return (
-        <form className="login-form">
+        <form className="register-form" action={registerUser}>
             <div>
-                <label for="name">Full Name</label>
+                <label htmlFor="name">Full Name</label>
                 <Input type="text" name="name" id="name" />
             </div>
             <div>
-                <label for="email">Email Address</label>
+                <label htmlFor="email">Email Address</label>
                 <Input type="email" name="email" id="email" />
             </div>
             <div>
-                <label for="password">Password</label>
+                <label htmlFor="password">Password</label>
                 <Input type="password" name="password" id="password" />
             </div>
             <div>
-                <label for="phone">Phone Number</label>
+                <label htmlFor="phone">Phone Number</label>
                 <Input type="tel" name="phone" id="phone" />
             </div>
             <div>
-                <label for="bio">Bio</label>
+                <label htmlFor="bio">Bio</label>
                 <Input className="min-h-16" type="text" name="bio" id="bio" />
             </div>
 

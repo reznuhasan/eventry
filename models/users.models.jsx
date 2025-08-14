@@ -15,12 +15,12 @@ const userSchema=new Schema({
         required:true,
     },
     phone:{
-        type:string,
+        type:String,
         required:true,
     },
     bio:{
-        type:string,
+        type:String,
     }
 })
 
-export const users=mongoose.model("users",userSchema)
+export const users=mongoose.models.Users || mongoose.model("Users",userSchema)
